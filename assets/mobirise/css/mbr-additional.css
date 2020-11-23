@@ -1160,27 +1160,6 @@ section.lazy-placeholder:after {
   border-radius: 50%;
   content: '✓';
 }
-.cid-rV0D3ajFwL {
-  padding-top: 0px;
-  padding-bottom: 45px;
-  background-color: #ffffff;
-}
-.cid-rV0D3ajFwL .title {
-  margin-bottom: 2rem;
-}
-.cid-rV0D3ajFwL .mbr-section-subtitle {
-  color: #767676;
-}
-.cid-rV0D3ajFwL a:not([href]):not([tabindex]) {
-  color: #fff;
-  border-radius: 3px;
-}
-.cid-rV0D3ajFwL a.btn-white:not([href]):not([tabindex]) {
-  color: #333;
-}
-.cid-rV0D3ajFwL textarea.form-control {
-  min-height: 188px;
-}
 .cid-sgvliDg562 {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -1251,6 +1230,27 @@ section.lazy-placeholder:after {
 }
 .cid-rWU3YrhEMX .mbr-text {
   color: #767676;
+}
+.cid-rV0D3ajFwL {
+  padding-top: 0px;
+  padding-bottom: 45px;
+  background-color: #ffffff;
+}
+.cid-rV0D3ajFwL .title {
+  margin-bottom: 2rem;
+}
+.cid-rV0D3ajFwL .mbr-section-subtitle {
+  color: #767676;
+}
+.cid-rV0D3ajFwL a:not([href]):not([tabindex]) {
+  color: #fff;
+  border-radius: 3px;
+}
+.cid-rV0D3ajFwL a.btn-white:not([href]):not([tabindex]) {
+  color: #333;
+}
+.cid-rV0D3ajFwL textarea.form-control {
+  min-height: 188px;
 }
 .cid-sgvStF52cZ {
   padding-top: 30px;
