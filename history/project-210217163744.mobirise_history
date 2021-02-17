@@ -73,7 +73,7 @@
         "file": "@PROJECT_PATH@fonts/MaisonNeue-Demi/font.ttf"
       }
     ],
-    "uniqCompNum": 153,
+    "uniqCompNum": 152,
     "versionPublish": "5.1.4",
     "screenshot": "screenshot.png",
     "favicon": false,
@@ -84,7 +84,9 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "publishChangesOnly": true
+    "publishChangesOnly": true,
+    "publishType": "local",
+    "publishPath": "@PROJECT_PATH@"
   },
   "pages": {
     "page1.html": {
@@ -720,27 +722,49 @@
           "_params": {}
         },
         {
-          "_params": {
-            "HTMLCode": "<div align=\"center\"><iframe src=\"https://qgiscloud.com/tragewegen/Trage_wegen_Aalst_online/?bl=mapnik&l=grid_aalst_2020%2Caalst_grens_20%2Cwerkkaart_aalst_2020&t=Trage_wegen_Aalst_online&e=433941%2C6605495%2C466453%2C6621370\" width=\"640\" height=\"480\"></iframe></div>",
-            "hideOnPublish": false,
-            "paddingTop": "3",
-            "paddingBottom": "2",
-            "bgImageRadio": false,
-            "bgImage": "images/bg3.jpg",
-            "parallax": true,
-            "bgColorRadio": true,
-            "bgColor": "#ffffff",
-            "overlay": false,
-            "overlayColor": "#222",
-            "overlayOpacity": 0.5
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".google-map": {
+              "height": "25rem",
+              "position": "relative",
+              "iframe": {
+                "height": "100%",
+                "width": "100%"
+              },
+              "[data-state-details]": {
+                "color": "#6b6763",
+                "font-family": "Montserrat",
+                "height": "1.5em",
+                "margin-top": "-0.75em",
+                "padding-left": "1.25rem",
+                "padding-right": "1.25rem",
+                "position": "absolute",
+                "text-align": "center",
+                "top": "50%",
+                "width": "100%"
+              },
+              "&[data-state]": {
+                "background": "#e9e5dc"
+              },
+              "&[data-state=\"loading\"]": {
+                "[data-state-details]": {
+                  "display": "none"
+                },
+                "&::after": {}
+              }
+            }
           },
-          "HTMLCode": "<div align=\"center\"><iframe src=\"https://qgiscloud.com/tragewegen/Trage_wegen_Aalst_online/?bl=mapnik&l=grid_aalst_2020%2Caalst_grens_20%2Cwerkkaart_aalst_2020&t=Trage_wegen_Aalst_online&e=433941%2C6605495%2C466453%2C6621370\" width=\"640\" height=\"480\"></iframe></div>",
-          "alias": "witsec-custom-html",
-          "_tags": [
-            "Extension"
-          ],
-          "_name": "witsec-custom-html-block",
-          "_anchor": "witsec-custom-html-block-48"
+          "_name": "map2",
+          "_customHTML": "<section class=\"map2\" group=\"Maps\">\n\n    <mbr-parameters>\n    <!-- Block of parameters for component -->\n        <input type=\"range\" inline title=\"Boven\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"2\" step=\"1\">\n        <input type=\"range\" inline title=\"Onder\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"2\" step=\"1\">\n        <input type=\"color\" title=\"Achtergrondkleur\" name=\"bgColor\" value=\"#ffffff\">\n        <input type=\"map\" title=\"Kaart\" name=\"googleMap\" place-id=\"iframe\" value=\"iframe\">\n    <!-- End block of parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-md-8\">\n                <div class=\"google-map\" mbr-map=\"googleMap\">\n            </div>\n        </div>\n    </div>\n</div></section>",
+          "_cid": "sgvrPVD7t5",
+          "_anchor": "map2-40",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
         },
         {
           "alias": false,
