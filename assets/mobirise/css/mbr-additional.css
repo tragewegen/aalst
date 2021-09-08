@@ -1205,6 +1205,29 @@ section.lazy-placeholder:after {
 .cid-sBV5tbwDXM blockquote {
   color: #767676;
 }
+.cid-sIoY2FP2QG {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+}
+.cid-sIoY2FP2QG .line {
+  background-color: #8981d3;
+  color: #8981d3;
+  align: center;
+  height: 2px;
+  margin: 0 auto;
+}
+.cid-sIoY2FP2QG .section-text {
+  padding: 2rem 0;
+}
+.cid-sIoY2FP2QG .inner-container {
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .cid-sIoY2FP2QG .inner-container {
+    width: 100% !important;
+  }
+}
 .cid-sB9wj9CFYi {
   padding-top: 45px;
   padding-bottom: 30px;
@@ -1247,6 +1270,9 @@ section.lazy-placeholder:after {
     padding: 15px;
     -webkit-flex: 0 0 20%;
   }
+}
+.cid-sB9wj9CFYi .card-title {
+  text-align: right;
 }
 .cid-sBTO9MZP1F {
   padding-top: 30px;
